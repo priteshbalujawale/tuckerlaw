@@ -3,9 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    font-family: 'Lato',Helvetica,Arial,Lucida,sans-serif;
 
+
+html{
+    font-family: 'Lato',Helvetica,Arial,Lucida,sans-serif;
+    scroll-behavior: smooth;
 }
 a:focus{
     outline: 2px dotted #000;
@@ -15,7 +17,13 @@ input:focus,textarea:focus,button:focus{
     outline: 2px dotted #000;
     outline-offset: -3px;
 }
-p{
+a{
+    color:inherit;
+}
+a:hover{
+    text-decoration: none !important;
+}
+body p{
     margin-bottom: 0 !important;
 }
 .fl-btn{
@@ -36,6 +44,7 @@ p{
     background-color: #e4c971;
 }
 
+
 .fl-header{
     background-color: #fff;
     position: fixed;
@@ -55,6 +64,7 @@ p{
     padding: 33px 0px 21px;
 }
 
+
 /* logo col */
 .fl-header-col-1{
     width: 35%;
@@ -64,6 +74,7 @@ p{
 .fl-header-col-1 a{
     display: block;
 }
+
 
 /* menu col */
 .fl-header-btn{
@@ -94,13 +105,16 @@ p{
     width: 100%;
     text-align: left;
     z-index: 9999;
-    display: none;
+    /* display: none; */
     box-shadow: 0 2px 5px rgb(0 0 0 / 20%);
+    visibility: hidden;
+
 
 }
 .fl-menu-item-has-child:hover .fl-sub-menu,
 .fl-menu-item-has-child:focus .fl-sub-menu{
-    display: block;
+    /* display: block; */
+    visibility: visible;
 }
 .fl-menu-item a{
     font-family: 'Lato',Helvetica,Arial,Lucida,sans-serif;
@@ -142,6 +156,7 @@ p{
     font-family: 'Lato',Helvetica,Arial,Lucida,sans-serif;
     font-weight: 600;
 }
+
 
 /* for mobile sec 1 */
 @media(max-width:980px){
@@ -246,6 +261,7 @@ p{
     }
 }
 
+
 @media(max-width:450px){
     .fl-header-btn {
         display: flex;
@@ -276,6 +292,7 @@ p{
     }
 }
 
+
 a[href^="##"]{
     white-space: noWrap;
 }
@@ -302,6 +319,7 @@ a[href^="##"]{
     text-align: center;
     padding: 20px;
     border:2px solid #304829;
+    line-height: 1.5em;
 }
 .fl-content-with-border a{
 color: #304829;
@@ -309,6 +327,7 @@ color: #304829;
 .fl-content-with-border a:hover{
 text-decoration: none;
 }
+
 
 /* Banner Section 3*/
 .fl-sec-3{
@@ -346,6 +365,7 @@ text-decoration: none;
     text-shadow: 0 2px 5px rgb(0 0 0 / 10%);
     padding: 42px;
 }
+
 
 .fl-sec-4.mobile{
     display: none;
@@ -482,6 +502,7 @@ width: 100%;
 .fl-prac-personal{background-image: url(img/bg-prac-wron.jpg);}
 .fl-prac-medical{background-image: url(img/bg-prac-pain.jpg);}
 
+
 /* section-5 */
 .fl-sec-5{
     width: 100%;
@@ -570,6 +591,7 @@ width: 100%;
     }
 }
 
+
 /* section 6 */
 .fl-sec-6{
     background-color: #304829;
@@ -626,6 +648,7 @@ width: 100%;
     min-height: 100px;
 }
 
+
 .fl-link-container h3 a{
     color: inherit;
     font: inherit;
@@ -655,6 +678,8 @@ width: 100%;
 .fl-text-atto-link a:hover{
     text-decoration: none;
 }
+
+
 
 
 /* section 6 mobile section */
@@ -733,6 +758,7 @@ width: 50%;
     margin-bottom: 0 !important;
 }
 
+
 .fl-sec7 a{
     color: #304829 !important;
 }
@@ -740,6 +766,7 @@ width: 50%;
     text-decoration: none !important;
 }
 /* section 7 mobile */
+
 
 @media(max-width:980px){
     .fl-sec7-row{
@@ -757,6 +784,7 @@ width: 50%;
     }
 }
 /* section 8 */
+
 
 .fl-section8{
     width: 100%;
@@ -815,11 +843,13 @@ width: 50%;
     width: 60px;
     position: relative;
 
+
 }
 .fl-atto-container .fl-heading h3 a{
     color: inherit;
     font-size: inherit;
 }
+
 
 .fl-atto-container .fl-heading h3 a:hover{
     text-decoration: none;
@@ -837,6 +867,8 @@ width: 50%;
 .fl-atto-charl{background-image: linear-gradient(180deg,rgba(30,30,30,0.22) 0%,rgba(30,30,30,0.94) 100%),url(img/Charles-D-Jones.jpg);}
 .fl-atto-renee{background-image: linear-gradient(180deg,rgba(30,30,30,0.22) 0%,rgba(30,30,30,0.94) 100%),url(img/Renee-Y-Tucker.jpg);}
 .fl-atto-anna{background-image: linear-gradient(180deg,rgba(30,30,30,0.22) 0%,rgba(30,30,30,0.94) 100%),url(img/atto-anna-lee.jpg);}
+
+
 
 
 /* section 8 mobile */
@@ -862,6 +894,7 @@ width: 50%;
     }
 }
 /* section 9 */
+
 
 .fl-sec9{
     width: 100%;
@@ -923,6 +956,7 @@ width: 50%;
     text-align: center;
     margin-top: -10px;
 }
+
 
 @media(max-width:980px){
     .fl-section8{
@@ -1007,6 +1041,7 @@ width: 50%;
      }
     }
 
+
 /* /section 11 */
 .fl-sec11{
     padding-top: 105px;
@@ -1063,6 +1098,7 @@ width: 50%;
     width: 95%;
 }
 
+
 .fl-short-form .fl-nf-cell label{
     font-size: 16px;
     color: #fff;
@@ -1085,6 +1121,7 @@ width: 50%;
 }
 .fl-short-form, .fl-short-form a{
     color: #fff;
+
 
 }
 .fl-short-form a:hover{
@@ -1136,6 +1173,7 @@ width: 50%;
     border: none !important;
 }
 
+
 .input-btn:hover:enabled{
     background-color: #e4c971;
     transition: 0.3s;
@@ -1145,11 +1183,13 @@ width: 50%;
     display: none;
 }
 
+
 .nf-error-msg.active,.nf-error-field-errors.active,.nf-error-msg-check-box.active{
     display: block;
     padding: 10px 0;
 }
 /* section 12 */
+
 
 .sec11{
     width: 100%;
@@ -1203,7 +1243,9 @@ width: 50%;
     margin-bottom: 25px;
     text-align: center;
 
+
 }
+
 
 .fl-social-container .fa:before{
     font-size: 25px;
@@ -1224,8 +1266,9 @@ width: 50%;
     padding: 30px;
 }
 
+
 .section11{
-    background-image: url(/img/map-bg);
+    background-image: url(img/map.jpg);
     width: 100%;
     height: 400px;
     background-size: 100% 100%;
@@ -1237,6 +1280,7 @@ width: 50%;
 .sec11 .fl-inner-text a:hover{
     text-decoration: none;
     }
+
 
 /* section 11 mobile */
 @media(max-width:980px){
@@ -1298,7 +1342,10 @@ width: 50%;
 }
 
 
+
+
 /* Banner /Slider css */
+
 
 .fl-banner-slider.active,.fl-img-container{
 display: block;
@@ -1307,18 +1354,37 @@ animation-duration: 4s;
 /* transform: translateY(0px);   */
 }
 @keyframes sliderAnimation{
-    0%{transform: translateY(40px);}
+    0%{transform: translateY(100px);}
     /* 60%{transform: translateY(-30px);} */
     /* 20%{transform: translateY(10px);} */
     20%{transform: translateY(0px);}
     80%{opacity: 1;}
     100%{opacity: 0;}
 }
+@media(max-width:980px){
+    .fl-banner-slider.active,.fl-img-container{
+        display: block;
+        animation-name: sliderAnimationMob;
+        animation-duration: 4s; 
+        height: 170px;
+        /* transform: translateY(0px);   */
+        }
+@keyframes sliderAnimationMob{
+    0%{transform: translateY(30px);}
+    /* 60%{transform: translateY(-30px);} */
+    /* 20%{transform: translateY(10px);} */
+    20%{transform: translateY(0px);}
+    80%{opacity: 1;}
+    100%{opacity: 0;}
+}
+}
 .fl-banner-slider{
     display: none;
 }
 
+
 /* footer slider css */
+
 
 .fl-sec10-container .fl-img-container.active{
     display: block;
@@ -1345,8 +1411,9 @@ animation-duration: 4s;
     background-color: #000;
 }
 
+
 /* scroll to top */
-.fl-scroll-top{
+.fl-scroll-top{ 
     animation: fadeInRight 1s 1 cubic-bezier(0.77,0,0.175,1);
     text-align: center;
     background: rgba(0,0,0,0.4);
@@ -1363,3 +1430,86 @@ animation-duration: 4s;
     padding: 10px;
     color: #fff;
 }
+.fl-scroll-top:focus{
+    outline: 2px dotted #fff !important;
+    outline-offset: -4px;
+    box-shadow: none !important;
+}
+@media(min-width:980px){
+    .fl-banner-slider{
+        height: 730px;
+    }
+    .fl-prac-area{
+        height: 285px;
+    }
+}
+
+
+.transition-prac-section{
+    animation-name: practiceAreaAnimation;
+    animation-duration: 1s;
+}
+@keyframes practiceAreaAnimation{
+    0%{transform: scale(0);}
+    100%{transform: scale(1);}
+}
+.transition-vdo-section{
+    animation-name: vdoSecAnimation;
+    animation-duration:2s;
+    transition: 0.2s;
+}
+@keyframes vdoSecAnimation{
+    0%{
+        transform: translateX(500px);
+    }
+    100%{transform: translateX(0);}
+}
+.transition-sec6-section{
+    animation-name: Sec6Animation;
+    animation-duration:2s;
+    transition: 0.2s;
+}
+@keyframes Sec6Animation{
+    0%{
+        transform: translatex(-1000px);
+    }
+    100%{transform: translateX(0);}
+}
+.transition-sec8-section{
+    animation-name: Sec8Animation;
+    animation-duration: 2s;
+}
+@keyframes Sec8Animation{
+    0%{
+        opacity:0;
+    }
+    100%{opacity:1}
+}
+.transition-sec9-section{
+    animation-name: Sec9Animation;
+    animation-duration:2s;
+    transition: 0.2s;
+}
+@keyframes Sec9Animation{
+    0%{
+        transform: translatex(100px);
+    }
+    100%{transform: translateX(0);}
+}
+
+
+
+
+/* Mobile menu smooth animation  */
+.fl-sub-menu{
+    visibility: hidden ;
+}
+.fl-hover>ul{
+    visibility: visible ;
+}
+.fl-hover .show-submenu{
+    visibility: visible !important;
+}
+
+
+
